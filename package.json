@@ -1,0 +1,26 @@
+{
+  "name": "restful-api-node-express-mongodb-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amarbessedik/RESTful-API-node-express-mongodb-App.git"
+  },
+  "author": "Amar Bessedik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amarbessedik/RESTful-API-node-express-mongodb-App/issues"
+  },
+  "homepage": "https://github.com/amarbessedik/RESTful-API-node-express-mongodb-App#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
