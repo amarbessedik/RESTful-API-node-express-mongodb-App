@@ -2,6 +2,8 @@ const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
 const connectDB = require("./db");
+const cors = require('cors');
+const bodyParser = require('body-parser');
 
 dotenv.config({ path: "./.env" });
 
@@ -9,6 +11,8 @@ dotenv.config({ path: "./.env" });
 const postsRoute = require('./routes/posts');
 
 //Middlewares: execute app.use() to add middleware logic for routes 
+app.use(cors())
+app.use(bodyParser.json());
 app.use('/posts', postsRoute);
 
 //Connect to db
